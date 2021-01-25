@@ -1,263 +1,367 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>My Portfolio</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="libs/font-awesome/css/font-awesome.min.css"
+        />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-</head>
-
-<body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+    <body>
+        <div id="mobile-menu-open" class="shadow-large">
+            <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>        
-            <li>
-                <a href="#contact">Contact </a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
+        <!-- End #mobile-menu-toggle -->
+        <header>
+            <div id="mobile-menu-close">
+                <span>Close</span>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <ul id="menu" class="shadow">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact </a>
+                </li>
+            </ul>
+        </header>
+        <!-- End header -->
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Thomas Wilson</h1>
-            <hr>
-            <h2>Web Developer</h2>
-            <h2>Berlin</h2>
-            <a href="Thomas Wilson - CV dev.pdf" class="btn-rounded-white">Download Resume</a>
+        <div id="lead">
+            <div id="lead-content">
+                <h1>Thomas Wilson</h1>
+                <hr />
+                <h2>Web Developer</h2>
+                <h2>Berlin</h2>
+                <a href="Thomas Wilson - CV dev.pdf" class="btn-rounded-white"
+                    >Download Resume</a
+                >
+            </div>
+            <!-- End #lead-content -->
+
+            <div id="lead-overlay"></div>
+
+            <div id="lead-down">
+                <span>
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </span>
+            </div>
+            <!-- End #lead-down -->
         </div>
-        <!-- End #lead-content -->
+        <!-- End #lead -->
 
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="heading">About Me</h2>
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            Ambitious and driven self-taught web developer. I am
+                            a fast learner dedicated to learning new skills with
+                            excellent communication.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-8">
+            </div>
+        </div>
+        <!-- End #about -->
+
+        <div id="projects" class="background-alt">
+            <h2 class="heading">Projects</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="images/yelpcamp_sm.jpg" />
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3 id="project-title">YelpCamp</h3>
+                            <p>
+                                YelpCamp is a website where users can submit and
+                                review campgrounds. They can also leave comments
+                                on existing campsites. User must be logged in to
+                                comment on or create campgrounds. This was part
+                                of Colt Steele’s Web Developer course I
+                                completed on Udemy.
+                            </p>
+                            <p>
+                                This project was created using html, css,
+                                bootstrap, Javascript, Node.js, Express and
+                                MongoDB. Passport.js was used to handle
+                                authentication.
+                            </p>
+                            <a
+                                href="https://afternoon-castle-86975.herokuapp.com/"
+                                target="_blank"
+                                >View Project</a
+                            >
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="images/blogapp-screen.jpg" />
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3 id="project-title">RESTful Food Blog</h3>
+                            <p>
+                                The RESTful blog app was created using Node.js,
+                                Express.js, MongoDB and Semantic UI. The app
+                                allows users to create, read, update and delete
+                                (CRUD) blog posts.
+                            </p>
+                            <a
+                                href="https://floating-atoll-75285.herokuapp.com/blogs"
+                                >View Project</a
+                            >
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="images/colourgame.jpg" />
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3 id="project-title">Colour Guessing Game</h3>
+                            <p>
+                                RBG Colour Guessing game is a game where the
+                                user has to guess which square matches the RGB
+                                colour values randomly generated at the top of
+                                the screen.
+                            </p>
+                            <p>
+                                The game features an easy and hard mode with 3
+                                squares or 6 respectively. This was created
+                                using html, CSS and JavaScript as part of the
+                                Web Developer bootcamp.
+                            </p>
+                            <a
+                                href="https://rocinante32.github.io/ColourGuessingGame/"
+                                >View Project</a
+                            >
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
+                </div>
+            </div>
+        </div>
+        <!-- End #projects -->
+
+        <div id="skills">
+            <h2 class="heading">Skills</h2>
+            <ul>
+                <li>html</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+                <li>Node.js</li>
+                <li>express.js</li>
+                <li>mongoDB</li>
+                <li>Git</li>
+                <li>Github</li>
+            </ul>
+        </div>
+        <!-- End #skills -->
+
+        <div id="experience" class="background-alt">
+            <h2 class="heading">Experience</h2>
+            <div id="experience-timeline">
+                <div data-date="October 2020 – January 2021">
+                    <h3>Full Stack Developer Bootcamp at Spiced Academy</h3>
+                    <h4>Berlin, DE</h4>
                     <p>
-                        Ambitious and driven self-taught web developer. I am a fast learner dedicated to learning new skills with excellent communication.
+                        After taking a number of courses at home online via
+                        self-study I decided to enrol at Spiced Academy on a 12
+                        week full stack web development course. During this
+                        time, I have built on my existing skills from self-study
+                        and have also learned new skills listed below:
+                        <br /><br /><strong
+                            >Vue.js, PostgreSQL, Testing, React, ES6.
+                        </strong>
+                    </p>
+                </div>
+
+                <div data-date="February 2020 – Present">
+                    <h3>Studying</h3>
+                    <h4>Berlin, DE</h4>
+                    <p>
+                        Over the past 6 months I have been working through a
+                        number of courses on Web Development on Udemy and
+                        FreeCodeCamp. During this time I have learned the
+                        following skills:
+                        <br /><br /><strong
+                            >HTML, CSS, JavaScript, Bootstrap, jQuery, Node.js
+                            and Git.</strong
+                        >
+                    </p>
+                </div>
+                <div data-date="January 2018 – January 2020">
+                    <h3>BASF</h3>
+                    <h4>
+                        Talent Acquistion Recruiter and Key Account Manager for
+                        the UK <br />
+                        Berlin, DE
+                    </h4>
+                    <p>
+                        Managed a high volume of full life cycle recruitment
+                        across several BASF sites within the UK. Recruiting
+                        across the following sectors: Admin & Support,
+                        Engineering, Finance, HR, Health & Safety, IT, Legal,
+                        Marketing and Sales, Procurement, Production and R&D.
+                    </p>
+                    <br />
+                    <p>
+                        Ownership and responsibility for all UK roles that were
+                        assigned to the Shared Service Centre. In addition to
+                        this responsibility for associated KPI’s and
+                        communications between Berlin and the local HR/ line
+                        managers.
+                    </p>
+                </div>
+
+                <div data-date="January 2016 – July 2017">
+                    <h3>NRL Recruitment</h3>
+                    <h4>
+                        Recruiter <br />
+                        Guildford, UK
+                    </h4>
+                    <p>
+                        Helped branch transition from predominantly oil and gas
+                        recruitment agency into a range of other sectors such as
+                        rail, civil engineering and nuclear. Worked closely with
+                        existing larger clients to support roles across all
+                        business areas such as commercial, operations and
+                        project management.
+                    </p>
+                    <br />
+                    <p>
+                        Branch super user, trained colleagues and offered
+                        support with IT and CRM/ATS software. Part of the
+                        database skilling project, to streamline recruitment
+                        processes. Offered design and feedback changes to the
+                        CRM/ATS system.
                     </p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End #about -->
+        <!-- End #experience -->
 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/yelpcamp_sm.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3 id="project-title">YelpCamp</h3>
-                        <p>
-                            YelpCamp is a website where users can submit and review campgrounds. They can also leave comments on existing campsites. User must be logged in to comment on or create campgrounds. 
-                            This was part of Colt Steele’s Web Developer course I completed on Udemy.</p>
-                        <p>
-                            This project was created using html, css, bootstrap, Javascript, Node.js, Express and MongoDB. Passport.js was used to handle authentication.
-                        </p>
-                        <a href="https://afternoon-castle-86975.herokuapp.com/" target="_blank">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/blogapp-screen.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3 id="project-title">RESTful Food Blog</h3>
-                        <p>
-                            The RESTful blog app was created using Node.js, Express.js, MongoDB and Semantic UI. The app allows users to create, read, update and delete (CRUD) blog posts. 
-                        </p>
-                        <a href="https://floating-atoll-75285.herokuapp.com/blogs">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/colourgame.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3 id="project-title">Colour Guessing Game</h3>
-                        <p>
-                            RBG Colour Guessing game is a game where the user has to guess which square matches the RGB colour values randomly generated at the top of the screen. 
-                        </p>
-                        <p>
-                            The game features an easy and hard mode with 3 squares or 6 respectively. This was created using html, CSS and JavaScript as part of the Web Developer bootcamp.
-                        </p>
-                        <a href="https://rocinante32.github.io/ColourGuessingGame/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+        <div id="education">
+            <h2 class="heading">Education</h2>
+            <div class="education-block">
+                <h3>Royal Holloway, University of London</h3>
+                <span class="education-date"> 2011 - 2014</span>
+                <h4>Bachelor of Science in Geology</h4>
             </div>
+            <!-- End .education-block -->
         </div>
-    </div>
-    <!-- End #projects -->
+        <!-- End #education -->
 
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>html</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Bootstrap</li>
-            <li>jQuery</li>
-            <li>Node.js</li>
-            <li>express.js</li>
-            <li>mongoDB</li>
-            <li>Git</li>
-            <li>Github</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="February 2020 – Present">
-                <h3>Studying</h3>
-                <h4> Berlin, DE</h4>
-                <p>
-                    Over the past 6 months I have been working through a number of courses on Web Development on Udemy and FreeCodeCamp. During this time I have learned the following skills:
-                    <br><br><strong>HTML, CSS, JavaScript, Bootstrap, jQuery, Node.js and Git.</strong>
-                </p>
+        <div id="contact">
+            <h2>Get in Touch</h2>
+            <div id="contact-form">
+                <form
+                    method="POST"
+                    action="https://formspree.io/wilf06@hotmail.co.uk"
+                >
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="Contact request from personal website"
+                    />
+                    <input
+                        type="email"
+                        name="_replyto"
+                        placeholder="Your email"
+                        required
+                    />
+                    <textarea
+                        name="message"
+                        placeholder="Your message"
+                        required
+                    ></textarea>
+                    <button type="submit">Send</button>
+                </form>
             </div>
-            <div data-date="January 2018 – January 2020">
-                <h3>BASF</h3>
-                <h4>Talent Acquistion Recruiter and Key Account Manager for the UK <br> Berlin, DE</h4>
-                <p>
-                    Managed a high volume of full life cycle recruitment across several BASF sites within the UK.
-                    Recruiting across the following sectors: Admin & Support, Engineering, Finance, HR, Health & Safety, IT, Legal, Marketing and Sales, Procurement, Production and R&D.
-                </p>
-                <br>
-                <p>
-                    Ownership and responsibility for all UK roles that were assigned to the Shared Service Centre. In addition to this responsibility for associated KPI’s and communications between Berlin and the local HR/ line managers.
-                </p>
-            </div>
-
-            <div data-date="January 2016 – July 2017">
-                <h3>NRL Recruitment</h3>
-                <h4>Recruiter <br> Guildford, UK</h4>
-                <p>
-                    Helped branch transition from predominantly oil and gas recruitment agency into a range of other sectors such as rail, civil engineering and nuclear.
-                    Worked closely with existing larger clients to support roles across all business areas such as commercial, operations and project management.
-                </p>
-                <br>
-                <p>
-                    Branch super user, trained colleagues and offered support with IT and CRM/ATS software. Part of the database skilling project, to streamline recruitment processes. 
-                    Offered design and feedback changes to the CRM/ATS system.
-                </p>
-            </div>
+            <!-- End #contact-form -->
         </div>
-    </div>
-    <!-- End #experience -->
+        <!-- End #contact -->
 
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>Royal Holloway, University of London</h3>
-            <span class="education-date"> 2011 - 2014</span>
-            <h4>Bachelor of Science in Geology</h4>
-        </div>
-        <!-- End .education-block -->
-
-    </div>
-    <!-- End #education -->
-
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/wilf06@hotmail.co.uk">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Thomas Wilson 2020
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/Rocinante32" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/thomas-wilson-aaa965b3" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 copyright">
+                        <p>Thomas Wilson 2020</p>
+                    </div>
+                    <div class="col-sm-2 top">
+                        <span id="to-top">
+                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="col-sm-5 social">
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://github.com/Rocinante32"
+                                    target="_blank"
+                                    ><i
+                                        class="fa fa-github"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/thomas-wilson-aaa965b3"
+                                    target="_blank"
+                                    ><i
+                                        class="fa fa-linkedin"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- End footer -->
+        </footer>
+        <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
-</body>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/scripts.min.js"></script>
+    </body>
 </html>
